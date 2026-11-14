@@ -147,4 +147,6 @@ mvn test
 
 ## License
 
-MIT – Queen's Collection Creative Studio
+MIT License
+
+Copyright (c) 2026 Rushikesh Asawale
