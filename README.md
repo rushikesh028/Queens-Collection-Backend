@@ -115,4 +115,151 @@ Queens-Collection/
 
 Follow these instructions to set up the project locally.
 
-### Pr
+### Prerequisites
+
+Install the following tools:
+
+- Java Development Kit (JDK)
+- Apache Maven
+- MySQL Server
+- Redis Server
+- Git
+- Visual Studio Code or IntelliJ IDEA
+
+Docker can also be used for containerized services where configured.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/rushikesh028/Queens-Collection-Backend.git
+```
+
+Navigate into the project:
+
+```bash
+cd Queens-Collection-Backend
+```
+
+### 2. Backend Setup
+
+Navigate to the backend directory:
+
+```bash
+cd backend
+```
+
+Configure the database and Redis connection details in the application configuration.
+
+Make sure the required database and Redis services are running.
+
+Build the project:
+
+```bash
+mvn clean install
+```
+
+Run the Spring Boot application:
+
+```bash
+mvn spring-boot:run
+```
+
+The backend is configured to use port `8080` by default, unless changed in the application configuration.
+
+### 3. Frontend Setup
+
+Navigate to the frontend directory:
+
+```bash
+cd frontend
+```
+
+Open `index.html` in a browser or run it using a local development server.
+
+Configure the frontend API base URL in the JavaScript code to point to the running Spring Boot backend.
+
+---
+
+## Backend Architecture
+
+The backend follows a layered architecture to separate responsibilities and improve maintainability.
+
+| Layer | Responsibility |
+|---|---|
+| Controller | Handles HTTP requests and API responses |
+| Service | Implements business logic |
+| Repository | Handles database operations |
+| Entity | Represents database models |
+| DTO | Transfers structured request and response data |
+| Security | Handles authentication and authorization |
+| Config | Manages application configurations |
+| Exception | Handles application-level exceptions |
+
+---
+
+## Security
+
+The backend uses Spring Security and JWT to secure application endpoints.
+
+Security-related capabilities include:
+
+- User authentication.
+- Token-based authorization.
+- Role-based access control.
+- Protected API endpoints.
+- Custom authentication filters.
+- Access-denied handling.
+
+**Security Note:** Never commit database passwords, JWT secrets, API keys, or other sensitive configuration values to GitHub. Use environment variables or an appropriate secrets-management solution.
+
+---
+
+## API Documentation
+
+The backend includes OpenAPI configuration for API documentation.
+
+Once the application is running, check the configured Swagger UI endpoint:
+
+```text
+http://localhost:8080/swagger-ui/index.html
+```
+
+The exact endpoint may depend on the application's OpenAPI configuration.
+
+---
+
+## Future Improvements
+
+Potential areas for further development include:
+
+- Enhanced product discovery and filtering.
+- Advanced editorial content management.
+- Improved caching strategies using Redis.
+- Automated backend testing.
+- CI/CD pipeline integration.
+- Production deployment and monitoring.
+- Enhanced frontend-backend integration.
+
+---
+
+## Developer
+
+**Rushikesh Asawale**
+
+Java Backend Developer | Full Stack Developer
+
+GitHub: [@rushikesh028](https://github.com/rushikesh028)
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+Copyright (c) 2026 Rushikesh Asawale.
+
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+**Queen's Collection — Fashion, Creativity & Technology.**
